@@ -1,0 +1,47 @@
+/*Common Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'salsa', serif;
+}
+
+body {
+    height: 100vh;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+}
+/*End of Common Styles*/
+
+/*start of shining effect*/
+.shining-text {
+    position: relative;
+    text-align: center;
+    letter-spacing: .5rem;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+/*end of shining effect*/
